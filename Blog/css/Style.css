@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("../css/fonts.css");
 
 
@@ -24,7 +25,7 @@ html,body{
 	--midnight: #104f55;
 	
 	/*Gradient color variable*/
-	--sky: linear-gradient(to right, #868f96 0%, #596164 100%);
+	--sky: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 	
 }
 
@@ -44,6 +45,30 @@ html,body{
     ul{
     list-style-type: none;
     }
+
+	h1{
+		font-family: var(--Lexend);
+		font-size: 2.5rem;
+	}
+
+	h3{
+		font-family: var(--Abel);
+		font-size: 1.3rem;
+	}
+
+	h2{
+		font-family: var(--Lexend);
+	}
+
+	button.btn{
+		border:none;
+		border-radius: 2rem;
+		padding: 1rem 3rem;
+		font-size: 1rem;
+		font-family: var(--Livvic);
+		cursor: pointer;
+	}
+
 /*-x- Global Classes -x-*/
 
 /*--- Navbar ---*/
@@ -51,7 +76,7 @@ html,body{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 9vh;
     overflow: hidden;
 	transition: height 0.5s ease-in-out;
 }
@@ -124,6 +149,52 @@ font-family: var(--Lexend);
 	color: #A1C4CF;
 }
 /*-x- Navbar -x-*/
+
+/*--- Main Content ---*/
+
+/*--- Site Title---*/
+main .site-title{
+	background: url("../assets/conifer-2178595_1920.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 91vh;
+	display: flex;
+	justify-content: center;
+}
+
+main .site-title .site-background{
+	padding-top: 16rem;
+	text-align: center;
+	color: var(--white);
+}
+
+main .site-title h1, h3{
+	margin: .3rem; 
+}
+
+main .site-title .btn{
+	margin: 1.8rem;
+	background: var(--sky);
+}
+
+main .site-title .btn:hover{
+	background: transparent;
+	color: white;
+	border: 1px solid var(--white);
+}
+
+/*-x- Site Title-x-*/
+
+/*--- Blog Carousel ---*/
+main .blog{
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 100vh;
+}
+/*-x- Blog Carousel -x-*/
+
+/*-x- Main Content -x-*/
 
 /*--- Viewport less then or equal to 750px ---*/
 @media only screen and (max-width: 760px){
