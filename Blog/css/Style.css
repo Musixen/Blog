@@ -69,6 +69,23 @@ html,body{
 		cursor: pointer;
 	}
 
+	span{
+		font-family: var(--Abel);
+	}
+	
+	.container{
+		margin: 0 5vw;
+	}
+	
+	.text-gray{
+		color: var(--text-gray);
+	}
+	
+	p{
+		font-family: var(--Lexend);
+		color: var(--text-light);
+	}
+
 /*-x- Global Classes -x-*/
 
 /*--- Navbar ---*/
@@ -76,7 +93,7 @@ html,body{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 9vh;
+    min-height: 10vh;
     overflow: hidden;
 	transition: height 0.5s ease-in-out;
 }
@@ -135,6 +152,15 @@ font-size: 1.6rem;
 padding: 1rem 0;
 display: block;
 font-family: var(--Lexend);
+height: 10vh;
+flex-direction: row;
+}
+
+main .seperator{
+	width: 100%;
+	background-color: var(--midnight);
+	padding-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 .nav .social{
@@ -163,7 +189,7 @@ main .site-title{
 }
 
 main .site-title .site-background{
-	padding-top: 16rem;
+	padding-top: 10rem;
 	text-align: center;
 	color: var(--white);
 }
@@ -185,14 +211,59 @@ main .site-title .btn:hover{
 
 /*-x- Site Title-x-*/
 
-/*--- Blog Carousel ---*/
-main .blog{
-	background-color: white;
-	background-repeat: no-repeat;
-	background-position: right;
-	height: 100vh;
+/*--- Site Content ---*/
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
-/*-x- Blog Carousel -x-*/
+
+main .post-content{
+    width: 100%;  
+}
+
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+main .site-content .post-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-image > div{
+	overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+	width: 100%;
+}
+
+main .site-content .post-content > .post-image .img:hover{
+	transform: scale(1.3);
+	transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .post-info span{
+	margin: 0.5rem;
+}
+
+main .post-content .post-title a{
+	font-family: var(--Anton);
+	font-size: 1.5rem;
+}
+
+main .site-content .post-content .post-title .post-btn{
+	border-radius: 0;
+	padding: .7rem 1.5rem;
+	background: var(--sky);
+}
+
+/*-x- Site Content -x-*/
 
 /*-x- Main Content -x-*/
 
