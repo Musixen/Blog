@@ -167,6 +167,10 @@ main .seperator{
 	padding: 1.4rem 0;
 }
 
+.nav .nav-login{
+	padding: .6rem 0;
+}
+
 .nav .social i{
 	padding: 0 .2rem
 }
@@ -179,6 +183,53 @@ main .seperator{
 /*--- Main Content ---*/
 
 /*--- Site Title---*/
+main .insertPost .insertPost-banner{
+	width: 100%;
+	text-align: center;
+	color: var(--white);
+	font-family: var(--Abel);
+	padding: 4vh;
+	background-color: var(--bg-color);
+}
+
+main .insertPost .insertPost-form{
+	padding: .8rem 10rem;
+	justify-content: center;
+}
+
+main .insertPost .insertPost-form form{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-gap: 16px;
+	padding: 1em;
+	margin: 2rem auto 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+
+main .insertPost .insertPost-form form textarea{
+	height: 60vh;
+}
+
+main .insertPost .insertPost-form form input{
+	border: 1px solid black;
+	height: 1rem;
+}
+
+main .insertPost .insertPost-form form button{
+	border: 1px solid black;
+	border-radius: 1rem;
+	width: 10rem;
+	height: 2rem;
+	font-family: var(--Livvic);
+	text-align: center;
+	position: absolute;
+	right: 80%;
+	bottom: 5%;
+}
+
+
+
 main .site-title{
 	background: url("../assets/conifer-2178595_1920.jpg");
 	background-position: center;
@@ -187,6 +238,7 @@ main .site-title{
 	display: flex;
 	justify-content: center;
 }
+
 
 main .site-title .site-background{
 	padding-top: 10rem;
